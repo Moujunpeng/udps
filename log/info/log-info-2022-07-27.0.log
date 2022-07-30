@@ -1,0 +1,187 @@
+2022-07-27 01:00:30.879 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool Line:766 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h27s776ms33µs500ns).
+2022-07-27 10:28:49.996 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool Line:766 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=9h28m30s263ms286µs900ns).
+2022-07-27 11:30:46.210 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool Line:766 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=14m25s409ms99µs).
+2022-07-27 15:09:14.901 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool Line:766 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3h28s165ms331µs).
+2022-07-27 15:50:48.070 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool Line:766 - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=41m43s450ms195µs100ns).
+2022-07-27 17:25:52.169 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 41824 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-07-27 17:25:52.172 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-07-27 17:25:52.172 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-07-27 17:25:53.335 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:25:53.336 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:25:53.336 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-07-27 17:25:53.710 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2af0af5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-27 17:25:54.728 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-07-27 17:25:54.748 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:25:54.762 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-07-27 17:25:54.763 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-07-27 17:25:55.056 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-07-27 17:25:55.056 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2831 ms
+2022-07-27 17:25:56.023 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-27 17:25:56.239 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 17:25:56.429 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-27 17:25:56.431 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-27 17:25:56.434 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-27 17:25:56.437 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-07-27 17:25:56.616 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-07-27 17:25:56.648 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-07-27 17:25:56.658 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-27 17:25:57.861 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-07-27 17:25:57.865 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-07-27 17:25:58.028 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.056s)
+2022-07-27 17:25:58.051 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-07-27 17:25:58.052 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-07-27 17:25:58.301 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-07-27 17:25:58.342 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-07-27 17:25:58.398 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-07-27 17:25:58.689 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:25:58.716 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-07-27 17:25:58.719 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.424 seconds (JVM running for 8.486)
+2022-07-27 17:25:58.720 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:35  - udpstarted listener
+2022-07-27 17:25:58.721 [main] INFO  com.hikvision.idatafusion.udps.flow.service.impl.CreateFileImplement Line:18  - create path is 000000
+2022-07-27 17:27:04.503 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 15992 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-07-27 17:27:04.508 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-07-27 17:27:04.508 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-07-27 17:27:05.789 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:27:05.790 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:27:05.790 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-07-27 17:27:06.142 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2623b5f7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-27 17:27:07.171 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-07-27 17:27:07.192 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:27:07.203 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-07-27 17:27:07.204 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-07-27 17:27:07.516 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-07-27 17:27:07.516 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2953 ms
+2022-07-27 17:27:08.359 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-27 17:27:08.541 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 17:27:08.708 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-27 17:27:08.710 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-27 17:27:08.712 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-27 17:27:08.715 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-07-27 17:27:08.849 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-07-27 17:27:08.881 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-07-27 17:27:08.891 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-27 17:27:09.981 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-07-27 17:27:09.985 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-07-27 17:27:10.116 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.035s)
+2022-07-27 17:27:10.140 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-07-27 17:27:10.142 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-07-27 17:27:10.367 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-07-27 17:27:10.419 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-07-27 17:27:10.481 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-07-27 17:27:10.771 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:27:10.798 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-07-27 17:27:10.802 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 6.997 seconds (JVM running for 7.96)
+2022-07-27 17:27:10.803 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:35  - udpstarted listener
+2022-07-27 17:27:10.804 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.CreateFileListener Line:22  - start create file listener
+2022-07-27 17:27:10.804 [main] INFO  com.hikvision.idatafusion.udps.flow.service.impl.CreateFileImplement Line:18  - create path is 000000
+2022-07-27 17:27:34.898 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 27904 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-07-27 17:27:34.902 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-07-27 17:27:34.902 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-07-27 17:27:36.072 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:27:36.072 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:27:36.072 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-07-27 17:27:36.486 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$760bddc2] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-27 17:27:37.469 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-07-27 17:27:37.488 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:27:37.500 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-07-27 17:27:37.500 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-07-27 17:27:37.795 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-07-27 17:27:37.796 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2844 ms
+2022-07-27 17:27:38.743 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-27 17:27:38.945 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 17:27:39.144 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-27 17:27:39.146 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-27 17:27:39.149 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-27 17:27:39.154 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-07-27 17:27:39.326 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-07-27 17:27:39.353 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-07-27 17:27:39.365 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-27 17:27:40.455 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-07-27 17:27:40.460 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-07-27 17:27:40.599 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.034s)
+2022-07-27 17:27:40.620 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-07-27 17:27:40.621 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-07-27 17:27:40.892 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-07-27 17:27:40.946 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-07-27 17:27:41.001 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-07-27 17:27:41.278 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:27:41.309 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-07-27 17:27:41.313 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.159 seconds (JVM running for 8.414)
+2022-07-27 17:27:41.315 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:35  - udpstarted listener
+2022-07-27 17:27:53.565 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.CreateFileListener Line:22  - start create file listener
+2022-07-27 17:28:03.927 [main] INFO  com.hikvision.idatafusion.udps.flow.service.impl.CreateFileImplement Line:18  - create path is 000000
+2022-07-27 17:29:00.861 [Thread-4] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:208 - Shutting down ExecutorService 'applicationTaskExecutor'
+2022-07-27 17:29:00.866 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource Line:350 - HikariPool-1 - Shutdown initiated...
+2022-07-27 17:29:00.880 [Thread-4] INFO  com.zaxxer.hikari.HikariDataSource Line:352 - HikariPool-1 - Shutdown completed.
+2022-07-27 17:47:23.545 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 39564 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-07-27 17:47:23.561 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-07-27 17:47:23.561 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-07-27 17:47:24.733 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:47:24.734 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:47:24.734 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-07-27 17:47:25.119 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$62aa7b4b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-27 17:47:26.066 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-07-27 17:47:26.084 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:47:26.097 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-07-27 17:47:26.098 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-07-27 17:47:26.392 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-07-27 17:47:26.392 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2773 ms
+2022-07-27 17:47:27.195 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-27 17:47:27.396 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 17:47:27.580 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-27 17:47:27.582 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-27 17:47:27.585 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-27 17:47:27.589 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-07-27 17:47:27.745 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-07-27 17:47:27.773 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-07-27 17:47:27.779 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-27 17:47:28.953 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-07-27 17:47:28.957 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-07-27 17:47:29.053 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.030s)
+2022-07-27 17:47:29.077 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-07-27 17:47:29.079 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-07-27 17:47:29.285 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-07-27 17:47:29.331 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-07-27 17:47:29.388 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-07-27 17:47:29.682 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:47:29.707 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-07-27 17:47:29.710 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 6.77 seconds (JVM running for 7.766)
+2022-07-27 17:47:29.712 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-07-27 17:47:29.713 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.CreateFileListener Line:22  - start create file listener
+2022-07-27 17:47:29.757 [pool-5-thread-1] INFO  com.hikvision.idatafusion.udps.flow.service.impl.CreateFileImplement Line:41  - create path is D:\program\udps
+2022-07-27 17:50:52.703 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 25840 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-07-27 17:50:52.718 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-07-27 17:50:52.719 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-07-27 17:50:53.793 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:50:53.794 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-07-27 17:50:53.794 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-07-27 17:50:54.128 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$4fff1895] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-07-27 17:50:55.153 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-07-27 17:50:55.171 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:50:55.186 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-07-27 17:50:55.186 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-07-27 17:50:55.486 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-07-27 17:50:55.487 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2707 ms
+2022-07-27 17:50:56.298 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-07-27 17:50:56.472 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-07-27 17:50:56.629 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-07-27 17:50:56.631 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-07-27 17:50:56.632 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-07-27 17:50:56.635 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-07-27 17:50:56.771 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-07-27 17:50:56.801 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-07-27 17:50:56.811 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-07-27 17:50:57.914 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-07-27 17:50:57.918 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-07-27 17:50:58.060 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.057s)
+2022-07-27 17:50:58.086 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-07-27 17:50:58.087 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-07-27 17:50:58.304 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-07-27 17:50:58.341 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-07-27 17:50:58.404 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-07-27 17:50:58.691 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-07-27 17:50:58.716 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-07-27 17:50:58.719 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 6.643 seconds (JVM running for 7.613)
+2022-07-27 17:50:58.720 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-07-27 17:50:58.721 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.CreateFileListener Line:22  - start create file listener
+2022-07-27 17:50:58.722 [pool-5-thread-1] INFO  com.hikvision.idatafusion.udps.flow.service.impl.CreateFileImplement Line:55  - create path is D:\program\udps
