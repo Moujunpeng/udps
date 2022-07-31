@@ -124,5 +124,19 @@ public class FlowController {
         return String.valueOf(id);
     }
 
+    @RequestMapping(value = "/thread/cachecompute",method = RequestMethod.POST)
+    @ResponseBody
+    public int computeCache(@RequestParam(value="id",required=true) int id) {
+        log.info("input calculation is " + id);
+        int output = 0;
+        try {
+            output = flowService.compute(id);
+        } catch (InterruptedException e) {
+            log.error("compute failed " + e);
+        }
+        log.info("output calculation result is " + output);
+        return output;
+    }
+
 
 }

@@ -7,6 +7,7 @@ import com.hikvision.idatafusion.udps.flow.dto.SqlTaskInfo;
 import com.hikvision.idatafusion.udps.flow.mapper.StorageDao;
 import com.hikvision.idatafusion.udps.flow.model.StorageLocal;
 import com.hikvision.idatafusion.udps.flow.service.FlowService;
+import com.hikvision.idatafusion.udps.thread.Memoizer3;
 import com.hikvison.idatafusion.udps.MysqlRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,6 +34,8 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
 
     private static final ThreadPoolExecutor executor= new ThreadPoolExecutor(5,5,10, TimeUnit.SECONDS,new LinkedBlockingQueue<>(3)
     );
+
+    private static Memoizer3 memoizer3 = new Memoizer3();
 
     private LinkedBlockingQueue<CalculationInfo> sqlInfoQueue = null;
 
@@ -93,6 +96,11 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
     @Override
     public String queryStatisticResult(String id) {
         return null;
+    }
+
+    @Override
+    public int compute(int id) throws InterruptedException {
+        return memoizer3.compute(id);
     }
 
     @Override
