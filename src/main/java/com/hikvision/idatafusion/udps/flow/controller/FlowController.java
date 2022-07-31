@@ -133,6 +133,8 @@ public class FlowController {
             output = flowService.compute(id);
         } catch (InterruptedException e) {
             log.error("compute failed " + e);
+        } catch (Throwable throwable) {
+            log.error("compute failed " + throwable);
         }
         log.info("output calculation result is " + output);
         return output;

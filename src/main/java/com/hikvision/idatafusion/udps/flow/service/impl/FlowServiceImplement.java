@@ -99,7 +99,7 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
     }
 
     @Override
-    public int compute(int id) throws InterruptedException {
+    public int compute(int id) throws Throwable {
         return memoizer3.compute(id);
     }
 

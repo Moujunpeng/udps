@@ -10,6 +10,6 @@ public interface FlowService {
 
     public String queryStatisticResult(String id);
 
-    public int compute(int id) throws InterruptedException;
+    public int compute(int id) throws Throwable;
 
 }
