@@ -1,9 +1,13 @@
 package com.hikvision.idatafusion.udps.flow.service.impl;
 
+import com.github.pagehelper.PageHelper;
 import com.hikvision.idatafusion.udps.constant.CommonConstant;
 import com.hikvision.idatafusion.udps.flow.controller.FlowController;
 import com.hikvision.idatafusion.udps.flow.dto.CalculationInfo;
+import com.hikvision.idatafusion.udps.flow.dto.InputUser;
 import com.hikvision.idatafusion.udps.flow.dto.SqlTaskInfo;
+import com.hikvision.idatafusion.udps.flow.dto.UserPageDTO;
+import com.hikvision.idatafusion.udps.flow.mapper.InputUserDao;
 import com.hikvision.idatafusion.udps.flow.mapper.StorageDao;
 import com.hikvision.idatafusion.udps.flow.model.StorageLocal;
 import com.hikvision.idatafusion.udps.flow.service.FlowService;
@@ -16,6 +20,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
 import java.util.concurrent.LinkedBlockingQueue;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
@@ -29,6 +34,9 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
 
     @Autowired
     private StorageDao storageDao;
+
+    @Autowired
+    private InputUserDao inputUserDao;
 
     private static final Logger log = LoggerFactory.getLogger(FlowServiceImplement.class);
 
@@ -101,6 +109,16 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
     @Override
     public int compute(int id) throws Throwable {
         return memoizer3.compute(id);
+    }
+
+    @Override
+    public List<InputUser> queryUserByPagenumAndsize(UserPageDTO userPageDTO) {
+
+        PageHelper.startPage(userPageDTO.getPageNum(),userPageDTO.getPageSize());
+
+        List<InputUser> inputUsers = inputUserDao.queryAllUser();
+
+        return inputUsers;
     }
 
     @Override

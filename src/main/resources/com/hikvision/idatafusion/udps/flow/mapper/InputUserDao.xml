@@ -28,4 +28,8 @@
         select * from inputuser where id = #{id}
     </select>
 
+    <select id="queryAllUser" resultType="com.hikvision.idatafusion.udps.flow.dto.InputUser">
+        select * from inputuser order by id asc
+    </select>
+
 </mapper>

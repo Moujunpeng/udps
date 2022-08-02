@@ -1,9 +1,6 @@
 package com.hikvision.idatafusion.udps.flow.controller;
 
-import com.hikvision.idatafusion.udps.flow.dto.CalculationInfo;
-import com.hikvision.idatafusion.udps.flow.dto.InputFileInfoDTO;
-import com.hikvision.idatafusion.udps.flow.dto.InputUser;
-import com.hikvision.idatafusion.udps.flow.dto.SqlTaskInfo;
+import com.hikvision.idatafusion.udps.flow.dto.*;
 import com.hikvision.idatafusion.udps.flow.service.FileService;
 import com.hikvision.idatafusion.udps.flow.service.FlowService;
 import com.hikvision.idatafusion.udps.flow.vo.OutFileVO;
@@ -15,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController
-@RequestMapping("/api/v1/file")
+@RequestMapping("/api/v1/flow")
 public class FlowController {
 
     private static final Logger log = LoggerFactory.getLogger(FlowController.class);
@@ -139,6 +136,15 @@ public class FlowController {
         log.info("output calculation result is " + output);
         return output;
     }
+
+    @RequestMapping(value = "/inputuser/queryByPagenumAndPageSize",method = RequestMethod.POST)
+    @ResponseBody
+    public List<InputUser> queryByPagenumAndPageSize(@RequestBody UserPageDTO userPageDTO) {
+        log.info("input start page is " + userPageDTO.getPageNum() + "page size is " + userPageDTO.getPageSize());
+        List<InputUser> inputUsers = flowService.queryUserByPagenumAndsize(userPageDTO);
+        return inputUsers;
+    }
+
 
 
 }

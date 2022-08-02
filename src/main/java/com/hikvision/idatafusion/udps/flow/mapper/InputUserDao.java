@@ -18,4 +18,6 @@ public interface InputUserDao {
     boolean updateByUserId(InputUser user);
 
     List<InputUser> queryByUserId(int id);
+
+    List<InputUser> queryAllUser();
 }
