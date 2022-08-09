@@ -11,8 +11,9 @@ import com.hikvision.idatafusion.udps.flow.mapper.InputUserDao;
 import com.hikvision.idatafusion.udps.flow.mapper.StorageDao;
 import com.hikvision.idatafusion.udps.flow.model.StorageLocal;
 import com.hikvision.idatafusion.udps.flow.service.FlowService;
+import com.hikvision.idatafusion.udps.flow.util.LogService;
 import com.hikvision.idatafusion.udps.thread.Memoizer3;
-import com.hikvison.idatafusion.udps.MysqlRunner;
+import com.hikvison.idatafusion.udps.scala.MysqlRunner;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.InitializingBean;
@@ -47,9 +48,12 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
 
     private LinkedBlockingQueue<CalculationInfo> sqlInfoQueue = null;
 
+    private static LogService logService = null;
 
     static {
 
+        logService = new LogService();
+        logService.start();
         //executor.setRejectedExecutionHandler(new ThreadPoolExecutor.CallerRunsPolicy());
 
     }
@@ -119,6 +123,11 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
         List<InputUser> inputUsers = inputUserDao.queryAllUser();
 
         return inputUsers;
+    }
+
+    @Override
+    public void logWrite(String message) throws InterruptedException {
+        logService.log(message);
     }
 
     @Override

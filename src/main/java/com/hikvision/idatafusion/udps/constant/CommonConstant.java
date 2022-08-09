@@ -9,4 +9,6 @@ public class CommonConstant {
 
     }
 
+    public static final int loggerQueueCount = 500;
+
 }
