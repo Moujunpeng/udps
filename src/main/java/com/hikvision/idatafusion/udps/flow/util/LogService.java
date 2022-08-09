@@ -21,11 +21,27 @@ public class LogService {
     private int reservations;
 
     public void log(String message) throws InterruptedException {
+
+        // 判断日志服务是否关闭，如果没有关闭的话，则向日志队列添加信息
+        synchronized (this){
+            if(isShutdown){
+                throw new IllegalStateException("logService is shut down");
+            }
+            reservations++;
+        }
         queue.put(message);
     }
 
     public void start(){
         logggerThread.start();
+    }
+
+    // 关闭日志服务
+    public void stop(){
+        synchronized (this){
+            isShutdown = true;
+        }
+        logggerThread.interrupt();
     }
 
     public LogService() {
@@ -40,15 +56,20 @@ public class LogService {
 
             try {
                 while (true){
+                    if(isShutdown && reservations == 0){
+                        break;
+                    }
                     String loggerMessage = queue.take();
+                    reservations--;
                     log.info("input logger message is " + loggerMessage);
                 }
             } catch (InterruptedException e) {
-
+                log.info("logService is shut down");
+                return;
             }finally {
 
             }
-
+            log.info("finally logService is shut down");
         }
     }
 

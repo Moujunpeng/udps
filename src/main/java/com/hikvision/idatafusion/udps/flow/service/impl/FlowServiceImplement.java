@@ -131,6 +131,11 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
     }
 
     @Override
+    public void stopLogService() {
+        logService.stop();
+    }
+
+    @Override
     public void afterPropertiesSet() throws Exception {
         sqlInfoQueue = new LinkedBlockingQueue<>(50);
     }

@@ -20,4 +20,6 @@ public interface FlowService {
     public List<InputUser> queryUserByPagenumAndsize(UserPageDTO userPageDTO);
 
     public void logWrite(String message) throws InterruptedException;
+
+    public void stopLogService();
 }

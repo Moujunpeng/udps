@@ -16,12 +16,27 @@ public class ConcurrencyController {
     @Autowired
     FlowService flowService;
 
-    @RequestMapping(value = "/thread/loggertest",method = RequestMethod.POST)
+    @RequestMapping(value = "/logthread/logger",method = RequestMethod.POST)
     @ResponseBody
-    public String MysqlRunner(@RequestBody String logmessage) throws Exception{
+    public String MysqlRunner(@RequestBody String logmessage){
         log.info("input calculation is " + logmessage);
-        flowService.logWrite(logmessage);
+        try {
+            flowService.logWrite(logmessage);
+        } catch (InterruptedException e) {
+
+        }catch (IllegalStateException e){
+            return "logservice is shut down";
+        }
         return logmessage;
+    }
+
+    @RequestMapping(value = "/logthread/stop",method = RequestMethod.POST)
+    @ResponseBody
+    public String stopLogThread(){
+        log.info("stop log thread");
+        flowService.stopLogService();
+        String output = "thread is shutdown";
+        return output;
     }
 
 }
