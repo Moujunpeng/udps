@@ -2,11 +2,11 @@ package com.hikvision.idatafusion.udps.flow.util;
 
 import com.hikvision.idatafusion.udps.constant.CommonConstant;
 import com.hikvision.idatafusion.udps.flow.service.impl.FlowServiceImplement;
+import org.omg.CORBA.TIMEOUT;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import java.util.concurrent.BlockingQueue;
-import java.util.concurrent.LinkedBlockingQueue;
+import java.util.concurrent.*;
 
 public class LogService {
 
@@ -20,6 +20,8 @@ public class LogService {
 
     private int reservations;
 
+    private final ExecutorService executorService = Executors.newSingleThreadExecutor();
+
     public void log(String message) throws InterruptedException {
 
         // 判断日志服务是否关闭，如果没有关闭的话，则向日志队列添加信息
@@ -32,7 +34,29 @@ public class LogService {
         queue.put(message);
     }
 
+    public void logByExecutor(String message){
+        if(executorService.isShutdown()){
+            throw new IllegalStateException("logService is shut down");
+        }
+        executorService.submit(new Runnable() {
+            @Override
+            public void run() {
+                try {
+                    log.info("by executor service input logger message is " + message);
+
+                } catch (Exception e) {
+                    log.info("log executor Service is shut down");
+                    return;
+                }finally {
+
+                }
+                log.info("finally log executor Service is shut down");
+            }
+        });
+    }
+
     public void start(){
+        // 开了一个后台线程在消费队列中的日志信息，然后进行打印
         logggerThread.start();
     }
 
@@ -42,6 +66,16 @@ public class LogService {
             isShutdown = true;
         }
         logggerThread.interrupt();
+    }
+
+    public void stopByexecutor(){
+        executorService.shutdown();
+        try {
+            executorService.awaitTermination(10000, TimeUnit.SECONDS);
+        } catch (InterruptedException e) {
+            //e.printStackTrace();
+        }
+        log.info("log executor service is shutdown");
     }
 
     public LogService() {
@@ -56,6 +90,7 @@ public class LogService {
 
             try {
                 while (true){
+                    Thread.sleep(3000);
                     if(isShutdown && reservations == 0){
                         break;
                     }

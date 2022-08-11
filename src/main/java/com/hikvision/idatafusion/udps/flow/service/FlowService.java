@@ -21,5 +21,9 @@ public interface FlowService {
 
     public void logWrite(String message) throws InterruptedException;
 
+    public void logWriteByExecutor(String message);
+
     public void stopLogService();
+
+    public void stopLogServiceExecutor();
 }

@@ -131,8 +131,18 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
     }
 
     @Override
+    public void logWriteByExecutor(String message) {
+        logService.logByExecutor(message);
+    }
+
+    public void stopLogServiceExecutor() {
+        logService.stopByexecutor();
+    }
+
+
+    @Override
     public void stopLogService() {
-        logService.stop();
+        logService.stopByexecutor();
     }
 
     @Override

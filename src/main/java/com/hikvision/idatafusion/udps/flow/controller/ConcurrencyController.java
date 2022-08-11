@@ -39,4 +39,25 @@ public class ConcurrencyController {
         return output;
     }
 
+    @RequestMapping(value = "/log/loggerStartExecutor",method = RequestMethod.POST)
+    @ResponseBody
+    public String logStart(@RequestBody String logmessage){
+        log.info("input calculation is " + logmessage);
+        try {
+            flowService.logWriteByExecutor(logmessage);
+        } catch (IllegalStateException e){
+            return "logservice is shut down";
+        }
+        return logmessage;
+    }
+
+    @RequestMapping(value = "/log/logStopExecutor",method = RequestMethod.POST)
+    @ResponseBody
+    public String stopLogExecutor(){
+        log.info("stop log thread");
+        flowService.stopLogServiceExecutor();
+        String output = "thread is shutdown";
+        return output;
+    }
+
 }
