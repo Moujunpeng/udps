@@ -22,9 +22,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.concurrent.LinkedBlockingQueue;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.util.concurrent.*;
 
 @Service
 public class FlowServiceImplement implements FlowService, InitializingBean {
@@ -139,6 +137,26 @@ public class FlowServiceImplement implements FlowService, InitializingBean {
         logService.stopByexecutor();
     }
 
+    @Override
+    public void checklog(int logcount) throws InterruptedException {
+        ExecutorService exec = Executors.newCachedThreadPool();
+        try {
+            for(int i = 0;i < logcount;i++){
+                int finalI = i;
+                exec.execute(new Runnable() {
+                    @Override
+                    public void run() {
+                        log.info("intput log name is " + finalI);
+                    }
+                });
+            }
+        }finally {
+            log.info("all input log is print");
+            exec.shutdown();
+            exec.awaitTermination(10000,TimeUnit.SECONDS);
+        }
+
+    }
 
     @Override
     public void stopLogService() {

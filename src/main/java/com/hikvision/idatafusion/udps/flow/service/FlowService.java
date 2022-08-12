@@ -26,4 +26,6 @@ public interface FlowService {
     public void stopLogService();
 
     public void stopLogServiceExecutor();
+
+    public void checklog(int logcount) throws InterruptedException;
 }

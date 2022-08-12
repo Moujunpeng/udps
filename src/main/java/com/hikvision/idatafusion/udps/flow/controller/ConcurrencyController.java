@@ -60,4 +60,14 @@ public class ConcurrencyController {
         return output;
     }
 
+    @RequestMapping(value = "/log/checkLog",method = RequestMethod.POST)
+    @ResponseBody
+    public String checkLog(@RequestParam int checknum) throws InterruptedException {
+        log.info("start check log");
+        flowService.checklog(checknum);
+        String output = "thread is shutdown";
+        return output;
+    }
+
+
 }
