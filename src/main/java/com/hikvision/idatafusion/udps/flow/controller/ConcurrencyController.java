@@ -1,6 +1,8 @@
 package com.hikvision.idatafusion.udps.flow.controller;
 
+import com.hikvision.idatafusion.udps.flow.dto.DivisionDTO;
 import com.hikvision.idatafusion.udps.flow.dto.SqlTaskInfo;
+import com.hikvision.idatafusion.udps.flow.service.ConcurrencyService;
 import com.hikvision.idatafusion.udps.flow.service.FlowService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -15,6 +17,9 @@ public class ConcurrencyController {
 
     @Autowired
     FlowService flowService;
+
+    @Autowired
+    ConcurrencyService concurrencyService;
 
     @RequestMapping(value = "/logthread/logger",method = RequestMethod.POST)
     @ResponseBody
@@ -69,5 +74,12 @@ public class ConcurrencyController {
         return output;
     }
 
+    @RequestMapping(value = "/division/test",method = RequestMethod.POST)
+    @ResponseBody
+    public int divisonTest(@RequestBody DivisionDTO divisionDTO) throws InterruptedException {
+        log.info("start division");
+        int output = concurrencyService.division(divisionDTO);
+        return output;
+    }
 
 }
