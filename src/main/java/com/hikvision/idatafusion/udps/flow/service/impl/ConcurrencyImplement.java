@@ -2,6 +2,7 @@ package com.hikvision.idatafusion.udps.flow.service.impl;
 
 import com.hikvision.idatafusion.udps.flow.dto.DivisionDTO;
 import com.hikvision.idatafusion.udps.flow.service.ConcurrencyService;
+import com.hikvision.idatafusion.udps.flow.util.HookThread;
 import com.hikvision.idatafusion.udps.flow.util.MyThreadFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -16,6 +17,10 @@ import java.util.concurrent.TimeUnit;
 public class ConcurrencyImplement implements ConcurrencyService {
 
     private static final Logger log = LoggerFactory.getLogger(ConcurrencyImplement.class);
+
+    static {
+        //Runtime.getRuntime().addShutdownHook(new HookThread());
+    };
 
 
     private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(

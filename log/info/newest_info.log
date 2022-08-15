@@ -1,35 +1,35 @@
-2022-08-13 10:23:36.075 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 16844 (D:\program\udps\target\classes started by mu in D:\program\udps)
-2022-08-13 10:23:36.084 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
-2022-08-13 10:23:36.085 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
-2022-08-13 10:23:37.657 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
-2022-08-13 10:23:37.660 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
-2022-08-13 10:23:37.661 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
-2022-08-13 10:23:38.099 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b4628fa] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
-2022-08-13 10:23:39.032 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
-2022-08-13 10:23:39.057 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
-2022-08-13 10:23:39.071 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
-2022-08-13 10:23:39.071 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
-2022-08-13 10:23:39.407 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
-2022-08-13 10:23:39.408 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 3239 ms
-2022-08-13 10:23:40.527 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
-2022-08-13 10:23:40.844 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
-2022-08-13 10:23:41.053 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
-2022-08-13 10:23:41.055 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
-2022-08-13 10:23:41.057 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
-2022-08-13 10:23:41.062 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
-2022-08-13 10:23:41.290 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
-2022-08-13 10:23:41.331 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
-2022-08-13 10:23:41.347 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
-2022-08-13 10:23:42.394 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
-2022-08-13 10:23:42.400 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
-2022-08-13 10:23:42.638 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.052s)
-2022-08-13 10:23:42.664 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
-2022-08-13 10:23:42.666 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
-2022-08-13 10:23:42.932 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
-2022-08-13 10:23:42.964 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
-2022-08-13 10:23:42.965 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
-2022-08-13 10:23:42.966 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
-2022-08-13 10:23:42.968 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+2022-08-15 16:30:45.732 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 29228 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 16:30:45.745 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 16:30:45.746 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 16:30:47.297 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 16:30:47.301 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 16:30:47.301 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 16:30:47.756 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$aa597e84] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 16:30:48.873 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 16:30:48.895 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 16:30:48.910 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 16:30:48.911 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 16:30:49.316 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 16:30:49.316 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 3468 ms
+2022-08-15 16:30:50.587 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 16:30:50.873 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 16:30:51.124 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 16:30:51.126 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 16:30:51.129 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 16:30:51.133 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 16:30:51.380 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 16:30:51.420 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 16:30:51.433 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 16:30:52.755 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 16:30:52.761 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 16:30:52.950 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.048s)
+2022-08-15 16:30:52.990 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 16:30:52.992 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 16:30:53.260 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 16:30:53.299 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 16:30:53.300 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 16:30:53.302 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 16:30:53.305 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
   Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
   NOT STARTED.
   Currently in standby mode.
@@ -37,25 +37,991 @@
   Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
   Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
 
-2022-08-13 10:23:42.969 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
-2022-08-13 10:23:42.969 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
-2022-08-13 10:23:42.969 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@256a0d95
-2022-08-13 10:23:43.044 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
-2022-08-13 10:23:43.075 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
-2022-08-13 10:23:43.119 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
-2022-08-13 10:23:43.361 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
-2022-08-13 10:23:43.438 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
-2022-08-13 10:23:43.439 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
-2022-08-13 10:23:43.449 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
-2022-08-13 10:23:43.496 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
-2022-08-13 10:23:43.503 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 8.291 seconds (JVM running for 9.526)
-2022-08-13 10:23:43.521 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
-2022-08-13 10:24:16.706 [http-nio-14337-exec-1] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring DispatcherServlet 'dispatcherServlet'
-2022-08-13 10:24:16.707 [http-nio-14337-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Line:524 - Initializing Servlet 'dispatcherServlet'
-2022-08-13 10:24:16.714 [http-nio-14337-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet Line:546 - Completed initialization in 7 ms
-2022-08-13 10:24:28.256 [http-nio-14337-exec-1] INFO  com.hikvision.idatafusion.udps.flow.controller.ConcurrencyController Line:80  - start division
-2022-08-13 10:24:28.258 [http-nio-14337-exec-1] INFO  com.hikvision.idatafusion.udps.flow.service.impl.ConcurrencyImplement Line:42  - division calculation result is 0
-2022-08-13 10:24:28.259 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.UEHLogger Line:15  - thread terminated with exception : Thread-6java.lang.ArithmeticException: / by zero
-2022-08-13 10:25:33.799 [http-nio-14337-exec-2] INFO  com.hikvision.idatafusion.udps.flow.controller.ConcurrencyController Line:80  - start division
-2022-08-13 10:25:33.800 [http-nio-14337-exec-2] INFO  com.hikvision.idatafusion.udps.flow.service.impl.ConcurrencyImplement Line:42  - division calculation result is 0
-2022-08-13 10:25:33.800 [Thread-8] INFO  com.hikvision.idatafusion.udps.flow.util.UEHLogger Line:15  - thread terminated with exception : Thread-8java.lang.ArithmeticException: / by zero
+2022-08-15 16:30:53.305 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 16:30:53.306 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 16:30:53.306 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@1310fcb0
+2022-08-15 16:30:53.410 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 16:30:53.454 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 16:30:53.506 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 16:30:53.764 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 16:30:53.848 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 16:30:53.848 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 16:30:53.861 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 16:30:53.898 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 16:30:53.903 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 9.222 seconds (JVM running for 10.554)
+2022-08-15 16:30:53.905 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 16:50:00.026 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:00 Job: 执行任务中...
+2022-08-15 16:50:00.026 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 1
+2022-08-15 16:50:00.098 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:00.108 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 1(Integer), 1(String)
+2022-08-15 16:50:00.116 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:01.014 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:01 Job: 执行任务中...
+2022-08-15 16:50:01.015 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 2
+2022-08-15 16:50:01.017 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:01.018 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 2(Integer), 2(String)
+2022-08-15 16:50:01.052 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:02.010 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:02 Job: 执行任务中...
+2022-08-15 16:50:02.010 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 3
+2022-08-15 16:50:02.012 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:02.013 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 3(Integer), 3(String)
+2022-08-15 16:50:02.048 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:03.010 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:03 Job: 执行任务中...
+2022-08-15 16:50:03.010 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 4
+2022-08-15 16:50:03.012 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:03.012 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 4(Integer), 4(String)
+2022-08-15 16:50:03.046 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:04.011 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:04 Job: 执行任务中...
+2022-08-15 16:50:04.011 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 5
+2022-08-15 16:50:04.013 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:04.013 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 5(Integer), 5(String)
+2022-08-15 16:50:04.047 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:05.015 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:05 Job: 执行任务中...
+2022-08-15 16:50:05.015 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 6
+2022-08-15 16:50:05.017 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:05.017 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 6(Integer), 6(String)
+2022-08-15 16:50:05.022 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:06.015 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:06 Job: 执行任务中...
+2022-08-15 16:50:06.015 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 7
+2022-08-15 16:50:06.017 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:06.017 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 7(Integer), 7(String)
+2022-08-15 16:50:06.049 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:07.013 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:07 Job: 执行任务中...
+2022-08-15 16:50:07.013 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 8
+2022-08-15 16:50:07.014 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:07.015 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 8(Integer), 8(String)
+2022-08-15 16:50:07.048 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:08.002 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:08 Job: 执行任务中...
+2022-08-15 16:50:08.002 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 9
+2022-08-15 16:50:08.003 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:08.004 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 9(Integer), 9(String)
+2022-08-15 16:50:08.037 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:09.009 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:09 Job: 执行任务中...
+2022-08-15 16:50:09.009 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 10
+2022-08-15 16:50:09.010 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:09.011 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 10(Integer), 10(String)
+2022-08-15 16:50:09.044 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:10.012 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:10 Job: 执行任务中...
+2022-08-15 16:50:10.012 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 11
+2022-08-15 16:50:10.014 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:10.015 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 11(Integer), 11(String)
+2022-08-15 16:50:10.019 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:11.012 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:11 Job: 执行任务中...
+2022-08-15 16:50:11.013 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 12
+2022-08-15 16:50:11.014 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:11.015 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 12(Integer), 12(String)
+2022-08-15 16:50:11.047 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:12.008 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:12 Job: 执行任务中...
+2022-08-15 16:50:12.009 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 13
+2022-08-15 16:50:12.010 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:12.011 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 13(Integer), 13(String)
+2022-08-15 16:50:12.017 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:13.005 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:13 Job: 执行任务中...
+2022-08-15 16:50:13.006 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 14
+2022-08-15 16:50:13.008 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:13.009 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 14(Integer), 14(String)
+2022-08-15 16:50:13.041 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:14.004 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:14 Job: 执行任务中...
+2022-08-15 16:50:14.005 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 15
+2022-08-15 16:50:14.006 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:14.007 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 15(Integer), 15(String)
+2022-08-15 16:50:14.040 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:15.015 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:15 Job: 执行任务中...
+2022-08-15 16:50:15.016 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 16
+2022-08-15 16:50:15.018 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:15.020 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 16(Integer), 16(String)
+2022-08-15 16:50:15.046 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:16.012 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:16 Job: 执行任务中...
+2022-08-15 16:50:16.013 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 17
+2022-08-15 16:50:16.015 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:16.016 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 17(Integer), 17(String)
+2022-08-15 16:50:16.047 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:17.015 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:17 Job: 执行任务中...
+2022-08-15 16:50:17.016 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 18
+2022-08-15 16:50:17.017 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:17.017 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 18(Integer), 18(String)
+2022-08-15 16:50:17.049 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:18.002 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:18 Job: 执行任务中...
+2022-08-15 16:50:18.002 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 19
+2022-08-15 16:50:18.003 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:18.004 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 19(Integer), 19(String)
+2022-08-15 16:50:18.008 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:19.010 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:19 Job: 执行任务中...
+2022-08-15 16:50:19.010 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 20
+2022-08-15 16:50:19.011 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:19.012 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 20(Integer), 20(String)
+2022-08-15 16:50:19.016 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:20.005 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:20 Job: 执行任务中...
+2022-08-15 16:50:20.006 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 21
+2022-08-15 16:50:20.007 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:20.008 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 21(Integer), 21(String)
+2022-08-15 16:50:20.042 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:21.007 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:21 Job: 执行任务中...
+2022-08-15 16:50:21.008 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 22
+2022-08-15 16:50:21.010 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:21.011 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 22(Integer), 22(String)
+2022-08-15 16:50:21.045 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:22.006 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:22 Job: 执行任务中...
+2022-08-15 16:50:22.007 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 23
+2022-08-15 16:50:22.009 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:22.010 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 23(Integer), 23(String)
+2022-08-15 16:50:22.015 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:23.004 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:23 Job: 执行任务中...
+2022-08-15 16:50:23.004 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 24
+2022-08-15 16:50:23.006 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:23.007 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 24(Integer), 24(String)
+2022-08-15 16:50:23.040 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:24.001 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:24 Job: 执行任务中...
+2022-08-15 16:50:24.002 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 25
+2022-08-15 16:50:24.003 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:24.003 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 25(Integer), 25(String)
+2022-08-15 16:50:24.037 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:25.016 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:25 Job: 执行任务中...
+2022-08-15 16:50:25.017 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 26
+2022-08-15 16:50:25.018 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:25.019 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 26(Integer), 26(String)
+2022-08-15 16:50:25.024 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:26.015 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:26 Job: 执行任务中...
+2022-08-15 16:50:26.042 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 27
+2022-08-15 16:50:26.044 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:26.045 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 27(Integer), 27(String)
+2022-08-15 16:50:26.049 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:27.004 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:27 Job: 执行任务中...
+2022-08-15 16:50:27.004 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 28
+2022-08-15 16:50:27.005 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:27.006 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 28(Integer), 28(String)
+2022-08-15 16:50:27.012 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:28.002 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:28 Job: 执行任务中...
+2022-08-15 16:50:28.002 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 29
+2022-08-15 16:50:28.003 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:28.004 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 29(Integer), 29(String)
+2022-08-15 16:50:28.036 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:29.009 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:29 Job: 执行任务中...
+2022-08-15 16:50:29.010 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 30
+2022-08-15 16:50:29.011 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:29.012 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 30(Integer), 30(String)
+2022-08-15 16:50:29.045 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:30.013 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:30 Job: 执行任务中...
+2022-08-15 16:50:30.014 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 31
+2022-08-15 16:50:30.015 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:30.016 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 31(Integer), 31(String)
+2022-08-15 16:50:30.048 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:31.016 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:31 Job: 执行任务中...
+2022-08-15 16:50:31.016 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 32
+2022-08-15 16:50:31.017 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:31.018 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 32(Integer), 32(String)
+2022-08-15 16:50:31.050 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:32.009 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:32 Job: 执行任务中...
+2022-08-15 16:50:32.010 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 33
+2022-08-15 16:50:32.012 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:32.013 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 33(Integer), 33(String)
+2022-08-15 16:50:32.046 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:33.009 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:33 Job: 执行任务中...
+2022-08-15 16:50:33.009 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 34
+2022-08-15 16:50:33.011 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:33.012 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 34(Integer), 34(String)
+2022-08-15 16:50:33.017 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:34.012 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:34 Job: 执行任务中...
+2022-08-15 16:50:34.013 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 35
+2022-08-15 16:50:34.015 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:34.016 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 35(Integer), 35(String)
+2022-08-15 16:50:34.021 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:35.011 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:35 Job: 执行任务中...
+2022-08-15 16:50:35.012 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 36
+2022-08-15 16:50:35.014 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:35.014 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 36(Integer), 36(String)
+2022-08-15 16:50:35.046 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:36.006 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:36 Job: 执行任务中...
+2022-08-15 16:50:36.007 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 37
+2022-08-15 16:50:36.008 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:36.009 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 37(Integer), 37(String)
+2022-08-15 16:50:36.042 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:37.012 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:37 Job: 执行任务中...
+2022-08-15 16:50:37.013 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 38
+2022-08-15 16:50:37.014 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:37.015 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 38(Integer), 38(String)
+2022-08-15 16:50:37.020 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:38.014 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:38 Job: 执行任务中...
+2022-08-15 16:50:38.015 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 39
+2022-08-15 16:50:38.016 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:38.017 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 39(Integer), 39(String)
+2022-08-15 16:50:38.049 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:39.001 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:39 Job: 执行任务中...
+2022-08-15 16:50:39.001 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 40
+2022-08-15 16:50:39.002 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:39.003 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 40(Integer), 40(String)
+2022-08-15 16:50:39.035 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:40.003 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:40 Job: 执行任务中...
+2022-08-15 16:50:40.004 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 41
+2022-08-15 16:50:40.005 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:40.006 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 41(Integer), 41(String)
+2022-08-15 16:50:40.039 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:41.003 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:41 Job: 执行任务中...
+2022-08-15 16:50:41.030 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 42
+2022-08-15 16:50:41.031 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:41.033 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 42(Integer), 42(String)
+2022-08-15 16:50:41.037 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:42.015 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:42 Job: 执行任务中...
+2022-08-15 16:50:42.016 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 43
+2022-08-15 16:50:42.017 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:42.018 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 43(Integer), 43(String)
+2022-08-15 16:50:42.050 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:43.013 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:43 Job: 执行任务中...
+2022-08-15 16:50:43.013 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 44
+2022-08-15 16:50:43.014 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:43.015 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 44(Integer), 44(String)
+2022-08-15 16:50:43.047 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:44.011 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:44 Job: 执行任务中...
+2022-08-15 16:50:44.011 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 45
+2022-08-15 16:50:44.013 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:44.013 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 45(Integer), 45(String)
+2022-08-15 16:50:44.046 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:45.000 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:45 Job: 执行任务中...
+2022-08-15 16:50:45.001 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 46
+2022-08-15 16:50:45.002 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:45.003 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 46(Integer), 46(String)
+2022-08-15 16:50:45.035 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:46.008 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:46 Job: 执行任务中...
+2022-08-15 16:50:46.009 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 47
+2022-08-15 16:50:46.011 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:46.011 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 47(Integer), 47(String)
+2022-08-15 16:50:46.016 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:47.016 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:47 Job: 执行任务中...
+2022-08-15 16:50:47.016 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 48
+2022-08-15 16:50:47.018 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:47.018 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 48(Integer), 48(String)
+2022-08-15 16:50:47.050 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:48.015 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:48 Job: 执行任务中...
+2022-08-15 16:50:48.016 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 49
+2022-08-15 16:50:48.017 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:48.017 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 49(Integer), 49(String)
+2022-08-15 16:50:48.022 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:49.014 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:49 Job: 执行任务中...
+2022-08-15 16:50:49.014 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 50
+2022-08-15 16:50:49.015 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:49.016 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 50(Integer), 50(String)
+2022-08-15 16:50:49.047 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:50.010 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:50 Job: 执行任务中...
+2022-08-15 16:50:50.010 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 51
+2022-08-15 16:50:50.012 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:50.012 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 51(Integer), 51(String)
+2022-08-15 16:50:50.045 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:51.006 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:51 Job: 执行任务中...
+2022-08-15 16:50:51.006 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 52
+2022-08-15 16:50:51.007 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:51.007 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 52(Integer), 52(String)
+2022-08-15 16:50:51.012 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:52.005 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:52 Job: 执行任务中...
+2022-08-15 16:50:52.005 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 53
+2022-08-15 16:50:52.006 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:52.007 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 53(Integer), 53(String)
+2022-08-15 16:50:52.013 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:53.007 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:53 Job: 执行任务中...
+2022-08-15 16:50:53.007 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 54
+2022-08-15 16:50:53.008 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:53.009 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 54(Integer), 54(String)
+2022-08-15 16:50:53.041 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:54.009 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:54 Job: 执行任务中...
+2022-08-15 16:50:54.010 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 55
+2022-08-15 16:50:54.011 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:54.012 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 55(Integer), 55(String)
+2022-08-15 16:50:54.045 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:55.005 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:55 Job: 执行任务中...
+2022-08-15 16:50:55.005 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 56
+2022-08-15 16:50:55.007 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:55.007 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 56(Integer), 56(String)
+2022-08-15 16:50:55.039 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:56.002 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:56 Job: 执行任务中...
+2022-08-15 16:50:56.003 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 57
+2022-08-15 16:50:56.004 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:56.004 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 57(Integer), 57(String)
+2022-08-15 16:50:56.009 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:57.012 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:57 Job: 执行任务中...
+2022-08-15 16:50:57.013 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 58
+2022-08-15 16:50:57.014 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:57.015 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 58(Integer), 58(String)
+2022-08-15 16:50:57.048 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:58.011 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:58 Job: 执行任务中...
+2022-08-15 16:50:58.012 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 59
+2022-08-15 16:50:58.014 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:58.014 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 59(Integer), 59(String)
+2022-08-15 16:50:58.047 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 16:50:59.010 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 16:50:59 Job: 执行任务中...
+2022-08-15 16:50:59.010 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 60
+2022-08-15 16:50:59.012 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 16:50:59.013 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 60(Integer), 60(String)
+2022-08-15 16:50:59.045 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:00.010 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:00 Job: 执行任务中...
+2022-08-15 17:00:00.010 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 61
+2022-08-15 17:00:00.012 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:00.013 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 61(Integer), 61(String)
+2022-08-15 17:00:00.018 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:01.009 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:01 Job: 执行任务中...
+2022-08-15 17:00:01.010 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 62
+2022-08-15 17:00:01.011 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:01.012 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 62(Integer), 62(String)
+2022-08-15 17:00:01.043 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:02.004 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:02 Job: 执行任务中...
+2022-08-15 17:00:02.004 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 63
+2022-08-15 17:00:02.006 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:02.006 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 63(Integer), 63(String)
+2022-08-15 17:00:02.038 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:03.000 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:03 Job: 执行任务中...
+2022-08-15 17:00:03.001 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 64
+2022-08-15 17:00:03.002 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:03.003 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 64(Integer), 64(String)
+2022-08-15 17:00:03.034 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:04.011 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:04 Job: 执行任务中...
+2022-08-15 17:00:04.012 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 65
+2022-08-15 17:00:04.013 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:04.013 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 65(Integer), 65(String)
+2022-08-15 17:00:04.045 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:05.011 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:05 Job: 执行任务中...
+2022-08-15 17:00:05.012 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 66
+2022-08-15 17:00:05.013 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:05.014 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 66(Integer), 66(String)
+2022-08-15 17:00:05.044 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:06.009 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:06 Job: 执行任务中...
+2022-08-15 17:00:06.010 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 67
+2022-08-15 17:00:06.011 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:06.011 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 67(Integer), 67(String)
+2022-08-15 17:00:06.044 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:07.007 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:07 Job: 执行任务中...
+2022-08-15 17:00:07.008 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 68
+2022-08-15 17:00:07.008 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:07.008 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 68(Integer), 68(String)
+2022-08-15 17:00:07.011 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:08.006 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:08 Job: 执行任务中...
+2022-08-15 17:00:08.007 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 69
+2022-08-15 17:00:08.008 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:08.008 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 69(Integer), 69(String)
+2022-08-15 17:00:08.039 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:09.002 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:09 Job: 执行任务中...
+2022-08-15 17:00:09.002 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 70
+2022-08-15 17:00:09.003 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:09.004 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 70(Integer), 70(String)
+2022-08-15 17:00:09.036 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:10.013 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:10 Job: 执行任务中...
+2022-08-15 17:00:10.014 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 71
+2022-08-15 17:00:10.015 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:10.015 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 71(Integer), 71(String)
+2022-08-15 17:00:10.047 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:11.001 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:11 Job: 执行任务中...
+2022-08-15 17:00:11.002 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 72
+2022-08-15 17:00:11.003 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:11.003 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 72(Integer), 72(String)
+2022-08-15 17:00:11.007 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:12.014 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:12 Job: 执行任务中...
+2022-08-15 17:00:12.015 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 73
+2022-08-15 17:00:12.016 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:12.017 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 73(Integer), 73(String)
+2022-08-15 17:00:12.049 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:13.012 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:13 Job: 执行任务中...
+2022-08-15 17:00:13.013 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 74
+2022-08-15 17:00:13.013 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:13.014 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 74(Integer), 74(String)
+2022-08-15 17:00:13.046 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:14.010 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:14 Job: 执行任务中...
+2022-08-15 17:00:14.011 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 75
+2022-08-15 17:00:14.012 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:14.012 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 75(Integer), 75(String)
+2022-08-15 17:00:14.044 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:15.005 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:15 Job: 执行任务中...
+2022-08-15 17:00:15.006 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 76
+2022-08-15 17:00:15.007 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:15.008 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 76(Integer), 76(String)
+2022-08-15 17:00:15.012 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:16.005 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:16 Job: 执行任务中...
+2022-08-15 17:00:16.006 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 77
+2022-08-15 17:00:16.007 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:16.007 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 77(Integer), 77(String)
+2022-08-15 17:00:16.039 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:17.006 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:17 Job: 执行任务中...
+2022-08-15 17:00:17.007 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 78
+2022-08-15 17:00:17.008 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:17.008 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 78(Integer), 78(String)
+2022-08-15 17:00:17.040 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:18.006 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:18 Job: 执行任务中...
+2022-08-15 17:00:18.006 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 79
+2022-08-15 17:00:18.007 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:18.008 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 79(Integer), 79(String)
+2022-08-15 17:00:18.039 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:19.001 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:19 Job: 执行任务中...
+2022-08-15 17:00:19.001 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 80
+2022-08-15 17:00:19.002 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:19.003 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 80(Integer), 80(String)
+2022-08-15 17:00:19.035 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:20.009 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:20 Job: 执行任务中...
+2022-08-15 17:00:20.010 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 81
+2022-08-15 17:00:20.011 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:20.011 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 81(Integer), 81(String)
+2022-08-15 17:00:20.016 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:21.006 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:21 Job: 执行任务中...
+2022-08-15 17:00:21.006 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 82
+2022-08-15 17:00:21.008 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:21.008 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 82(Integer), 82(String)
+2022-08-15 17:00:21.040 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:22.004 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:22 Job: 执行任务中...
+2022-08-15 17:00:22.004 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 83
+2022-08-15 17:00:22.006 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:22.006 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 83(Integer), 83(String)
+2022-08-15 17:00:22.009 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:23.004 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:23 Job: 执行任务中...
+2022-08-15 17:00:23.005 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 84
+2022-08-15 17:00:23.006 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:23.006 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 84(Integer), 84(String)
+2022-08-15 17:00:23.039 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:24.001 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:24 Job: 执行任务中...
+2022-08-15 17:00:24.002 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 85
+2022-08-15 17:00:24.003 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:24.003 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 85(Integer), 85(String)
+2022-08-15 17:00:24.007 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:25.005 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:25 Job: 执行任务中...
+2022-08-15 17:00:25.006 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 86
+2022-08-15 17:00:25.010 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:25.011 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 86(Integer), 86(String)
+2022-08-15 17:00:25.016 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:26.003 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:26 Job: 执行任务中...
+2022-08-15 17:00:26.004 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 87
+2022-08-15 17:00:26.005 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:26.005 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 87(Integer), 87(String)
+2022-08-15 17:00:26.009 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:27.000 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:27 Job: 执行任务中...
+2022-08-15 17:00:27.000 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 88
+2022-08-15 17:00:27.002 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:27.002 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 88(Integer), 88(String)
+2022-08-15 17:00:27.036 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:34.192 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 39144 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:00:34.197 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:00:34.197 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:00:35.555 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:00:35.556 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:00:35.556 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:00:35.961 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$6dc4f3a7] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:00:36.921 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:00:36.943 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:00:36.957 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:00:36.957 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:00:37.267 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:00:37.268 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 3003 ms
+2022-08-15 17:00:38.243 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:00:38.485 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:00:38.683 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:00:38.685 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:00:38.687 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:00:38.691 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:00:38.906 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:00:38.931 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:00:38.940 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:00:40.047 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:00:40.053 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:00:40.222 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.045s)
+2022-08-15 17:00:40.251 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:00:40.253 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:00:40.468 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:00:40.497 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:00:40.497 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:00:40.499 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:00:40.501 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:00:40.502 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:00:40.502 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:00:40.503 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2fe2965c
+2022-08-15 17:00:40.592 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:00:40.624 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:00:40.676 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:00:40.917 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:00:41.002 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:00:41.002 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:00:41.014 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:00:41.017 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:41 Job: 执行任务中...
+2022-08-15 17:00:41.018 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 1
+2022-08-15 17:00:41.019 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:41 Job: 执行任务中...
+2022-08-15 17:00:41.019 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 2
+2022-08-15 17:00:41.020 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:41 Job: 执行任务中...
+2022-08-15 17:00:41.020 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 3
+2022-08-15 17:00:41.021 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:41 Job: 执行任务中...
+2022-08-15 17:00:41.022 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 4
+2022-08-15 17:00:41.056 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:00:41.059 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.541 seconds (JVM running for 8.727)
+2022-08-15 17:00:41.060 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:00:41.088 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:41.088 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:41.088 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:41.088 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:41.097 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 3(Integer), 3(String)
+2022-08-15 17:00:41.097 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 2(Integer), 2(String)
+2022-08-15 17:00:41.097 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 4(Integer), 4(String)
+2022-08-15 17:00:41.097 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 1(Integer), 1(String)
+2022-08-15 17:00:41.101 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:41.103 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:41.105 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:41.105 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:42.013 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:42 Job: 执行任务中...
+2022-08-15 17:00:42.013 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 5
+2022-08-15 17:00:42.014 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:42.015 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 5(Integer), 5(String)
+2022-08-15 17:00:42.046 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:43.010 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:43 Job: 执行任务中...
+2022-08-15 17:00:43.010 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 6
+2022-08-15 17:00:43.012 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:43.012 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 6(Integer), 6(String)
+2022-08-15 17:00:43.045 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:44.010 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:44 Job: 执行任务中...
+2022-08-15 17:00:44.011 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 7
+2022-08-15 17:00:44.012 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:44.012 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 7(Integer), 7(String)
+2022-08-15 17:00:44.017 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:45.003 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:45 Job: 执行任务中...
+2022-08-15 17:00:45.004 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 8
+2022-08-15 17:00:45.005 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:45.006 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 8(Integer), 8(String)
+2022-08-15 17:00:45.010 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:46.004 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:46 Job: 执行任务中...
+2022-08-15 17:00:46.004 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 9
+2022-08-15 17:00:46.005 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:46.006 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 9(Integer), 9(String)
+2022-08-15 17:00:46.038 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:47.007 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:47 Job: 执行任务中...
+2022-08-15 17:00:47.007 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 10
+2022-08-15 17:00:47.008 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:47.009 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 10(Integer), 10(String)
+2022-08-15 17:00:47.041 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:48.005 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:48 Job: 执行任务中...
+2022-08-15 17:00:48.005 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 11
+2022-08-15 17:00:48.006 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:48.007 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 11(Integer), 11(String)
+2022-08-15 17:00:48.038 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:49.003 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:49 Job: 执行任务中...
+2022-08-15 17:00:49.004 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 12
+2022-08-15 17:00:49.005 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:49.005 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 12(Integer), 12(String)
+2022-08-15 17:00:49.009 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:50.003 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:50 Job: 执行任务中...
+2022-08-15 17:00:50.003 [quartzScheduler_Worker-2] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 13
+2022-08-15 17:00:50.004 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:50.005 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 13(Integer), 13(String)
+2022-08-15 17:00:50.037 [quartzScheduler_Worker-2] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:51.014 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:51 Job: 执行任务中...
+2022-08-15 17:00:51.015 [quartzScheduler_Worker-1] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 14
+2022-08-15 17:00:51.016 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:51.017 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 14(Integer), 14(String)
+2022-08-15 17:00:51.048 [quartzScheduler_Worker-1] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:52.014 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:52 Job: 执行任务中...
+2022-08-15 17:00:52.014 [quartzScheduler_Worker-5] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 15
+2022-08-15 17:00:52.015 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:52.016 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 15(Integer), 15(String)
+2022-08-15 17:00:52.048 [quartzScheduler_Worker-5] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:53.011 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:53 Job: 执行任务中...
+2022-08-15 17:00:53.012 [quartzScheduler_Worker-6] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 16
+2022-08-15 17:00:53.014 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:53.016 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 16(Integer), 16(String)
+2022-08-15 17:00:53.048 [quartzScheduler_Worker-6] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:54.015 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:54 Job: 执行任务中...
+2022-08-15 17:00:54.016 [quartzScheduler_Worker-7] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 17
+2022-08-15 17:00:54.018 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:54.020 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 17(Integer), 17(String)
+2022-08-15 17:00:54.027 [quartzScheduler_Worker-7] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:55.004 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:55 Job: 执行任务中...
+2022-08-15 17:00:55.005 [quartzScheduler_Worker-8] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 18
+2022-08-15 17:00:55.006 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:55.007 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 18(Integer), 18(String)
+2022-08-15 17:00:55.012 [quartzScheduler_Worker-8] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:56.014 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:56 Job: 执行任务中...
+2022-08-15 17:00:56.015 [quartzScheduler_Worker-9] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 19
+2022-08-15 17:00:56.016 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:56.017 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 19(Integer), 19(String)
+2022-08-15 17:00:56.022 [quartzScheduler_Worker-9] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:57.013 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:57 Job: 执行任务中...
+2022-08-15 17:00:57.014 [quartzScheduler_Worker-10] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 20
+2022-08-15 17:00:57.015 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:57.015 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 20(Integer), 20(String)
+2022-08-15 17:00:57.048 [quartzScheduler_Worker-10] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:58.012 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:58 Job: 执行任务中...
+2022-08-15 17:00:58.013 [quartzScheduler_Worker-3] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 21
+2022-08-15 17:00:58.014 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:58.014 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 21(Integer), 21(String)
+2022-08-15 17:00:58.046 [quartzScheduler_Worker-3] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:00:59.008 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:31  - 2022-08-15 17:00:59 Job: 执行任务中...
+2022-08-15 17:00:59.008 [quartzScheduler_Worker-4] INFO  com.hikvision.idatafusion.udps.quartz.CronJob Line:35  - int i is 22
+2022-08-15 17:00:59.009 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==>  Preparing: insert into inputuser (id,name) values ( ?, ? )
+2022-08-15 17:00:59.010 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - ==> Parameters: 22(Integer), 22(String)
+2022-08-15 17:00:59.029 [quartzScheduler_Worker-4] DEBUG com.hikvision.idatafusion.udps.flow.mapper.InputUserDao.insertIntoUser Line:137 - <==    Updates: 1
+2022-08-15 17:02:26.895 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 13628 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:02:26.900 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:02:26.900 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:02:28.311 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:02:28.311 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:02:28.311 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:02:28.732 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$2b22327] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:02:29.767 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:02:29.785 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:02:29.800 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:02:29.801 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:02:30.123 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:02:30.123 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 3171 ms
+2022-08-15 17:02:31.135 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:02:31.373 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:02:31.537 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:02:31.539 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:02:31.541 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:02:31.546 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:02:31.764 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:02:31.788 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:02:31.798 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:02:32.972 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:02:32.978 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:02:33.116 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.039s)
+2022-08-15 17:02:33.140 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:02:33.141 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:02:33.392 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:02:33.427 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:02:33.427 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:02:33.429 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:02:33.431 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:02:33.432 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:02:33.432 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:02:33.433 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@44e4cb76
+2022-08-15 17:02:33.519 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:02:33.556 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:02:33.606 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:02:33.844 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:02:33.915 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:02:33.916 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:02:33.925 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:02:33.951 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:02:33.954 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.703 seconds (JVM running for 8.887)
+2022-08-15 17:02:33.956 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:15:27.449 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 32108 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:15:27.455 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:15:27.455 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:15:28.771 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:15:28.772 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:15:28.773 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:15:29.174 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$e0e76375] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:15:30.206 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:15:30.228 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:15:30.243 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:15:30.244 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:15:30.560 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:15:30.560 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 3008 ms
+2022-08-15 17:15:31.599 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:15:31.851 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:15:32.020 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:15:32.021 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:15:32.023 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:15:32.027 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:15:32.235 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:15:32.258 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:15:32.267 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:15:33.436 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:15:33.442 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:15:33.572 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.037s)
+2022-08-15 17:15:33.597 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:15:33.599 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:15:33.834 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:15:33.863 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:15:33.864 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:15:33.865 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:15:33.867 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:15:33.868 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:15:33.868 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:15:33.868 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@2dd1086
+2022-08-15 17:15:33.951 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:15:33.988 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:15:34.028 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:15:34.257 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:15:34.332 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:15:34.333 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:15:34.342 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:15:34.371 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:15:34.375 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.626 seconds (JVM running for 8.824)
+2022-08-15 17:15:34.377 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:18:02.474 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 37484 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:18:02.479 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:18:02.480 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:18:03.758 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:18:03.759 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:18:03.759 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:18:04.173 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$75a0cc42] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:18:05.222 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:18:05.241 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:18:05.254 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:18:05.255 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:18:05.566 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:18:05.566 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 3023 ms
+2022-08-15 17:18:06.549 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:18:06.800 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:18:06.984 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:18:06.986 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:18:06.988 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:18:06.993 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:18:07.208 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:18:07.244 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:18:07.255 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:18:08.455 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:18:08.461 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:18:08.574 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.033s)
+2022-08-15 17:18:08.604 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:18:08.605 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:18:08.824 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:18:08.855 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:18:08.855 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:18:08.858 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:18:08.860 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:18:08.861 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:18:08.861 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:18:08.861 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@46a795de
+2022-08-15 17:18:08.952 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:18:08.991 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:18:09.040 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:18:09.266 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:18:09.338 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:18:09.338 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:18:09.345 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:18:09.376 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:18:09.379 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.584 seconds (JVM running for 8.743)
+2022-08-15 17:18:09.381 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:18:09.382 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:15  - start
+2022-08-15 17:18:09.435 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:43  - exception is java.sql.SQLException: Can not issue data manipulation statements with executeQuery().
+2022-08-15 17:19:18.798 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 42508 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:19:18.803 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:19:18.803 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:19:19.991 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:19:19.992 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:19:19.992 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:19:20.387 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$723b5875] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:19:21.369 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:19:21.389 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:19:21.406 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:19:21.406 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:19:21.698 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:19:21.699 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2827 ms
+2022-08-15 17:19:22.579 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:19:22.816 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:19:22.971 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:19:22.973 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:19:22.975 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:19:22.978 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:19:23.191 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:19:23.216 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:19:23.225 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:19:24.383 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:19:24.388 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:19:24.489 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.029s)
+2022-08-15 17:19:24.514 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:19:24.515 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:19:24.752 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:19:24.787 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:19:24.788 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:19:24.790 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:19:24.792 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:19:24.793 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:19:24.793 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:19:24.794 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@9df564f
+2022-08-15 17:19:24.888 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:19:24.928 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:19:24.970 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:19:25.197 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:19:25.270 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:19:25.271 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:19:25.280 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:19:25.305 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:19:25.307 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.194 seconds (JVM running for 8.281)
+2022-08-15 17:19:25.309 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:19:25.310 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:15  - start
+2022-08-15 17:19:25.370 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:43  - exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near '17:19:25)' at line 1
+2022-08-15 17:20:03.637 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 15756 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:20:03.642 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:20:03.642 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:20:04.875 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:20:04.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:20:04.876 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:20:05.264 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$9899cc94] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:20:06.306 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:20:06.325 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:20:06.340 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:20:06.341 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:20:06.649 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:20:06.649 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2946 ms
+2022-08-15 17:20:07.571 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:20:07.802 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:20:07.963 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:20:07.965 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:20:07.966 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:20:07.969 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:20:08.159 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:20:08.186 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:20:08.195 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:20:09.350 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:20:09.354 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:20:09.460 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.035s)
+2022-08-15 17:20:09.491 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:20:09.493 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:20:09.711 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:20:09.747 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:20:09.748 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:20:09.750 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:20:09.752 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:20:09.753 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:20:09.753 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:20:09.754 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@6b37df8e
+2022-08-15 17:20:09.836 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:20:09.867 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:20:09.914 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:20:10.152 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:20:10.226 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:20:10.227 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:20:10.236 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:20:10.261 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:20:10.265 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.256 seconds (JVM running for 8.309)
+2022-08-15 17:20:10.267 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:20:10.268 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:15  - start
+2022-08-15 17:20:10.324 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:43  - exception is java.sql.SQLSyntaxErrorException: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near ':20:10)' at line 1
+2022-08-15 17:20:48.576 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 6372 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:20:48.579 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:20:48.580 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:20:49.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:20:49.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:20:49.824 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:20:50.191 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$36d58086] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:20:51.242 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:20:51.260 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:20:51.275 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:20:51.275 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:20:51.580 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:20:51.580 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2950 ms
+2022-08-15 17:20:52.489 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:20:52.697 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:20:52.882 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:20:52.884 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:20:52.887 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:20:52.891 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:20:53.100 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:20:53.124 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:20:53.130 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:20:54.268 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:20:54.273 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:20:54.367 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.030s)
+2022-08-15 17:20:54.394 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:20:54.396 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:20:54.645 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:20:54.685 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:20:54.686 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:20:54.688 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:20:54.690 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:20:54.690 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:20:54.690 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:20:54.691 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@5f08fe00
+2022-08-15 17:20:54.782 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:20:54.816 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:20:54.858 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:20:55.081 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:20:55.144 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:20:55.145 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:20:55.155 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:20:55.181 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:20:55.184 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.228 seconds (JVM running for 8.269)
+2022-08-15 17:20:55.185 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:20:55.186 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:15  - start
+2022-08-15 17:20:55.247 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:43  - exception is java.sql.SQLSyntaxErrorException: Unknown column '15_17_20_55' in 'field list'
+2022-08-15 17:22:11.043 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:50  - Starting UdpsApplication on LAPTOP-QMTI127H with PID 42540 (D:\program\udps\target\classes started by mu in D:\program\udps)
+2022-08-15 17:22:11.048 [main] DEBUG com.hikvision.idatafusion.udps.UdpsApplication Line:53  - Running with Spring Boot v2.1.6.RELEASE, Spring v5.1.8.RELEASE
+2022-08-15 17:22:11.048 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:650 - The following profiles are active: logback-file
+2022-08-15 17:22:12.341 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'inputUserDao' and 'com.hikvision.idatafusion.udps.flow.mapper.InputUserDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:22:12.342 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:239 - Skipping MapperFactoryBean with name 'storageDao' and 'com.hikvision.idatafusion.udps.flow.mapper.StorageDao' mapperInterface. Bean already defined with the same name!
+2022-08-15 17:22:12.342 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner Line:166 - No MyBatis mapper was found in '[com.hikvision.idatafusion.udps]' package. Please check your configuration.
+2022-08-15 17:22:12.743 [main] INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:330 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$22823114] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2022-08-15 17:22:13.762 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:90  - Tomcat initialized with port(s): 14337 (http)
+2022-08-15 17:22:13.781 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Initializing ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:22:13.793 [main] INFO  org.apache.catalina.core.StandardService Line:173 - Starting service [Tomcat]
+2022-08-15 17:22:13.794 [main] INFO  org.apache.catalina.core.StandardEngine Line:173 - Starting Servlet engine: [Apache Tomcat/9.0.21]
+2022-08-15 17:22:14.092 [main] INFO  org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/udps] Line:173 - Initializing Spring embedded WebApplicationContext
+2022-08-15 17:22:14.092 [main] INFO  org.springframework.web.context.ContextLoader Line:283 - Root WebApplicationContext: initialization completed in 2987 ms
+2022-08-15 17:22:15.011 [main] INFO  springfox.documentation.spring.web.PropertySourcedRequestMappingHandlerMapping Line:69  - Mapped URL path [/v2/api-docs] onto method [public org.springframework.http.ResponseEntity<springfox.documentation.spring.web.json.Json> springfox.documentation.swagger2.web.Swagger2Controller.getDocumentation(java.lang.String,javax.servlet.http.HttpServletRequest)]
+2022-08-15 17:22:15.227 [main] INFO  org.springframework.scheduling.concurrent.ThreadPoolTaskExecutor Line:171 - Initializing ExecutorService 'applicationTaskExecutor'
+2022-08-15 17:22:15.380 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.util.MsUtil CLASS_CACHE cache.
+2022-08-15 17:22:15.382 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.genid.GenIdUtil CACHE cache.
+2022-08-15 17:22:15.384 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:60  - Clear tk.mybatis.mapper.version.VersionUtil CACHE cache.
+2022-08-15 17:22:15.387 [main] INFO  tk.mybatis.mapper.autoconfigure.MapperCacheDisabler Line:83  - Clear EntityHelper entityTableMap cache.
+2022-08-15 17:22:15.598 [main] INFO  org.flywaydb.core.internal.license.VersionPrinter Line:49  - Flyway Community Edition 5.2.4 by Boxfuse
+2022-08-15 17:22:15.625 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2022-08-15 17:22:15.635 [main] WARN  com.zaxxer.hikari.util.DriverDataSource Line:68  - Registered driver with driverClassName=com.mysql.jdbc.Driver was not found, trying direct instantiation.
+2022-08-15 17:22:16.813 [main] INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2022-08-15 17:22:16.820 [main] INFO  org.flywaydb.core.internal.database.DatabaseFactory Line:49  - Database: jdbc:mysql://localhost:3306/mujunpeng (MySQL 8.0)
+2022-08-15 17:22:16.933 [main] INFO  org.flywaydb.core.internal.command.DbValidate Line:49  - Successfully validated 2 migrations (execution time 00:00.035s)
+2022-08-15 17:22:16.961 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Current version of schema `mujunpeng`: 1.1
+2022-08-15 17:22:16.963 [main] INFO  org.flywaydb.core.internal.command.DbMigrate Line:49  - Schema `mujunpeng` is up to date. No migration necessary.
+2022-08-15 17:22:17.160 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1208 - Using default implementation for ThreadExecutor
+2022-08-15 17:22:17.191 [main] INFO  org.quartz.core.SchedulerSignalerImpl Line:61  - Initialized Scheduler Signaller of type: class org.quartz.core.SchedulerSignalerImpl
+2022-08-15 17:22:17.192 [main] INFO  org.quartz.core.QuartzScheduler Line:229 - Quartz Scheduler v.2.3.1 created.
+2022-08-15 17:22:17.194 [main] INFO  org.quartz.simpl.RAMJobStore Line:155 - RAMJobStore initialized.
+2022-08-15 17:22:17.197 [main] INFO  org.quartz.core.QuartzScheduler Line:294 - Scheduler meta-data: Quartz Scheduler (v2.3.1) 'quartzScheduler' with instanceId 'NON_CLUSTERED'
+  Scheduler class: 'org.quartz.core.QuartzScheduler' - running locally.
+  NOT STARTED.
+  Currently in standby mode.
+  Number of jobs executed: 0
+  Using thread pool 'org.quartz.simpl.SimpleThreadPool' - with 10 threads.
+  Using job-store 'org.quartz.simpl.RAMJobStore' - which does not support persistence. and is not clustered.
+
+2022-08-15 17:22:17.198 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1362 - Quartz scheduler 'quartzScheduler' initialized from an externally provided properties instance.
+2022-08-15 17:22:17.198 [main] INFO  org.quartz.impl.StdSchedulerFactory Line:1366 - Quartz scheduler version: 2.3.1
+2022-08-15 17:22:17.198 [main] INFO  org.quartz.core.QuartzScheduler Line:2293 - JobFactory set to: org.springframework.scheduling.quartz.SpringBeanJobFactory@15e1f8fe
+2022-08-15 17:22:17.293 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:147 - Context refreshed
+2022-08-15 17:22:17.329 [main] INFO  springfox.documentation.spring.web.plugins.DocumentationPluginsBootstrapper Line:150 - Found 1 custom documentation plugin(s)
+2022-08-15 17:22:17.371 [main] INFO  springfox.documentation.spring.web.scanners.ApiListingReferenceScanner Line:41  - Scanning for api listing references
+2022-08-15 17:22:17.589 [main] INFO  springfox.documentation.spring.web.readers.operation.CachingOperationNameGenerator Line:40  - Generating unique operation named: MysqlRunnerUsingPOST_1
+2022-08-15 17:22:17.675 [main] INFO  org.springframework.scheduling.quartz.SchedulerFactoryBean Line:726 - Starting Quartz Scheduler now
+2022-08-15 17:22:17.675 [main] INFO  org.quartz.core.QuartzScheduler Line:547 - Scheduler quartzScheduler_$_NON_CLUSTERED started.
+2022-08-15 17:22:17.686 [main] INFO  org.apache.coyote.http11.Http11NioProtocol Line:173 - Starting ProtocolHandler ["http-nio-14337"]
+2022-08-15 17:22:17.715 [main] INFO  org.springframework.boot.web.embedded.tomcat.TomcatWebServer Line:202 - Tomcat started on port(s): 14337 (http) with context path '/udps'
+2022-08-15 17:22:17.718 [main] INFO  com.hikvision.idatafusion.udps.UdpsApplication Line:59  - Started UdpsApplication in 7.335 seconds (JVM running for 8.484)
+2022-08-15 17:22:17.720 [main] INFO  com.hikvision.idatafusion.udps.flow.listener.UdpsStartedListener Line:38  - udpstarted listener
+2022-08-15 17:22:17.721 [Thread-6] INFO  com.hikvision.idatafusion.udps.flow.util.HookThread Line:15  - start
