@@ -12,6 +12,8 @@ import java.util.concurrent.ArrayBlockingQueue;
 import java.util.concurrent.ThreadFactory;
 import java.util.concurrent.ThreadPoolExecutor;
 import java.util.concurrent.TimeUnit;
+import java.util.concurrent.locks.Lock;
+import java.util.concurrent.locks.ReentrantLock;
 
 @Service
 public class ConcurrencyImplement implements ConcurrencyService {
@@ -22,6 +24,7 @@ public class ConcurrencyImplement implements ConcurrencyService {
         //Runtime.getRuntime().addShutdownHook(new HookThread());
     };
 
+    private Lock lock = new ReentrantLock();
 
     private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
             5,
@@ -49,6 +52,34 @@ public class ConcurrencyImplement implements ConcurrencyService {
         log.info("division calculation result is " + output[0]);
 
         return output[0];
+    }
+
+    @Override
+    public boolean trySendOnSharedLine(String message, int time) throws InterruptedException {
+
+        if(!lock.tryLock(time,TimeUnit.SECONDS)){
+           log.info("get retreenlock failed");
+           return false;
+        }
+
+        boolean flag;
+
+        try{
+            flag = sendOnSharedLine(message, time);
+        }finally {
+            lock.unlock();
+        }
+
+        return flag;
+    }
+
+    public boolean sendOnSharedLine(String message,int time) throws InterruptedException {
+
+        log.info("send message is " + message);
+
+        Thread.sleep(time);
+
+        return true;
     }
 
 }

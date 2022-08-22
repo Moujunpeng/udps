@@ -82,4 +82,18 @@ public class ConcurrencyController {
         return output;
     }
 
+    @RequestMapping(value = "/retreenlock/timingtest",method = RequestMethod.POST)
+    @ResponseBody
+    public String timingRetreenLockkTest(@RequestParam String message,@RequestParam int time) throws InterruptedException {
+        log.info("start timing");
+        boolean flag = concurrencyService.trySendOnSharedLine(message,time);
+        String output = "";
+        if(flag){
+            output = "send message successfully";
+        }else{
+            output = "send message failed";
+        }
+        return output;
+    }
+
 }

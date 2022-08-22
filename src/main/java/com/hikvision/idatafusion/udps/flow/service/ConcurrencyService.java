@@ -6,5 +6,7 @@ public interface ConcurrencyService {
 
     public int division(DivisionDTO divisionDTO);
 
+    public boolean trySendOnSharedLine(String message,int time) throws InterruptedException;
+
 
 }
