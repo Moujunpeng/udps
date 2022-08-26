@@ -4,14 +4,14 @@ import com.hikvision.idatafusion.udps.flow.dto.DivisionDTO;
 import com.hikvision.idatafusion.udps.flow.service.ConcurrencyService;
 import com.hikvision.idatafusion.udps.flow.util.HookThread;
 import com.hikvision.idatafusion.udps.flow.util.MyThreadFactory;
+import com.hikvision.idatafusion.udps.flow.util.ReentrantJob;
+import com.hikvision.idatafusion.udps.flow.util.ReentrantLockMine;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
 
-import java.util.concurrent.ArrayBlockingQueue;
-import java.util.concurrent.ThreadFactory;
-import java.util.concurrent.ThreadPoolExecutor;
-import java.util.concurrent.TimeUnit;
+import java.lang.reflect.Executable;
+import java.util.concurrent.*;
 import java.util.concurrent.locks.Lock;
 import java.util.concurrent.locks.ReentrantLock;
 
@@ -20,11 +20,13 @@ public class ConcurrencyImplement implements ConcurrencyService {
 
     private static final Logger log = LoggerFactory.getLogger(ConcurrencyImplement.class);
 
+    private static Lock unfairLock = new ReentrantLockMine(false);
+
     static {
         //Runtime.getRuntime().addShutdownHook(new HookThread());
     };
 
-    private Lock lock = new ReentrantLock();
+    private Lock lock = new ReentrantLockMine(true);
 
     private static ThreadPoolExecutor threadPoolExecutor = new ThreadPoolExecutor(
             5,
@@ -35,8 +37,12 @@ public class ConcurrencyImplement implements ConcurrencyService {
             new MyThreadFactory(),
             new ThreadPoolExecutor.AbortPolicy());
 
+    private static ExecutorService executorService = Executors.newFixedThreadPool(10);
+
     @Override
     public int division(DivisionDTO divisionDTO) {
+
+        ExecutorService executorService = Executors.newFixedThreadPool(10);
 
         final int[] output = {0};
 
@@ -71,6 +77,17 @@ public class ConcurrencyImplement implements ConcurrencyService {
         }
 
         return flag;
+    }
+
+    @Override
+    public void testUnfairReentrantLock(int count) {
+
+        log.info("start test unfair lock");
+
+        for(int i = 0;i < count;i++){
+            executorService.submit(new ReentrantJob(lock));
+        }
+
     }
 
     public boolean sendOnSharedLine(String message,int time) throws InterruptedException {

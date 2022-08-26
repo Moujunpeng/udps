@@ -8,5 +8,5 @@ public interface ConcurrencyService {
 
     public boolean trySendOnSharedLine(String message,int time) throws InterruptedException;
 
-
+    public void testUnfairReentrantLock(int count);
 }

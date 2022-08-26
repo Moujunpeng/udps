@@ -96,4 +96,13 @@ public class ConcurrencyController {
         return output;
     }
 
+    @RequestMapping(value = "/retreenlock/unfairLocktest",method = RequestMethod.POST)
+    @ResponseBody
+    public String timingRetreenLockkUnfairTest(@RequestParam int count) throws InterruptedException {
+        log.info("start timing");
+        concurrencyService.testUnfairReentrantLock(count);
+        String output = "";
+        return output;
+    }
+
 }
